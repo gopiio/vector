@@ -19,12 +19,12 @@ name = "vector"
 test = false
 bench = false
 
-[[bin]]
-name = "graphql-schema"
-path = "src/api/schema/gen.rs"
-test = false
-bench = false
-required-features = ["default-no-api-client"]
+# [[bin]]
+# name = "graphql-schema"
+# path = "src/api/schema/gen.rs"
+# test = false
+# bench = false
+# required-features = ["default-no-api-client"]
 
 [[bin]]
 name = "secret-backend-example"
