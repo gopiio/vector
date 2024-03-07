@@ -23,8 +23,6 @@ Arival
 Arnova
 Asus
 Atlassian
-atleastonce
-atmostonce
 Attab
 Audiosonic
 avsc
@@ -55,11 +53,8 @@ Dockerfiles
 DOOV
 Douban
 E2ETest
-emqx
-eventloop
 Enot
 Evercoss
-exactlyonce
 Explay
 FAQs
 FDO
@@ -164,7 +159,6 @@ pront
 Proscan
 Qmobilevn
 RPZ
-RRSIGs
 Rackspace
 Rathi
 Regza
@@ -174,7 +168,6 @@ Rockchip
 Roku
 Roundcube
 Rowling
-rumqttc
 SBT
 SKtelesys
 Salesforce
@@ -283,7 +276,6 @@ dnsutils
 dockercmd
 downsides
 downwardapi
-ede
 emoji
 esbuild
 etld

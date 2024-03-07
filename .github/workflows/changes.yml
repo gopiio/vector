@@ -96,8 +96,6 @@ on:
         value: ${{ jobs.int_tests.outputs.loki }}
       mongodb:
         value: ${{ jobs.int_tests.outputs.mongodb }}
-      mqtt:
-        value: ${{ jobs.int_tests.outputs.mqtt }}
       nats:
         value: ${{ jobs.int_tests.outputs.nats }}
       nginx:
@@ -128,7 +126,6 @@ jobs:
   # Detects changes that are not specific to integration tests
   source:
     runs-on: ubuntu-20.04
-    timeout-minutes: 5
     if: ${{ inputs.source }}
     outputs:
       source: ${{ steps.filter.outputs.source }}
@@ -196,7 +193,6 @@ jobs:
   # Detects changes that are specific to integration tests
   int_tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     if: ${{ inputs.int_tests }}
     outputs:
       all-tests: ${{ steps.filter.outputs.all-tests}}
@@ -225,7 +221,6 @@ jobs:
       logstash: ${{ steps.filter.outputs.logstash }}
       loki: ${{ steps.filter.outputs.loki }}
       mongodb: ${{ steps.filter.outputs.mongodb }}
-      mqtt: ${{ steps.filter.outputs.mqtt }}
       nats: ${{ steps.filter.outputs.nats }}
       nginx: ${{ steps.filter.outputs.nginx }}
       opentelemetry: ${{ steps.filter.outputs.opentelemetry }}
@@ -254,7 +249,6 @@ jobs:
   # Detects changes that are specific to e2e tests
   e2e_tests:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
     if: ${{ inputs.e2e_tests }}
     outputs:
       all-tests: ${{ steps.filter.outputs.all-tests}}
