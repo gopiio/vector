@@ -1,9 +1,9 @@
 use crate::config::schema;
-use futures_util::{FutureExt, StreamExt};
+// use futures_util::{FutureExt, StreamExt};
 // use heim::{disk::Partition, units::information::byte};
-use indexmap::IndexMap;
-use std::{collections::HashMap, path::PathBuf};
-use vector_lib::{buffers::config::DiskUsage, internal_event::DEFAULT_OUTPUT};
+// use indexmap::IndexMap;
+use std::collections::HashMap;
+use vector_lib::internal_event::DEFAULT_OUTPUT;
 
 use super::{
     builder::ConfigBuilder, transform::get_transform_output_ids, ComponentKey, Config, OutputId,
