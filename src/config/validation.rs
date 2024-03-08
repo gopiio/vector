@@ -194,7 +194,7 @@ pub fn check_outputs(config: &ConfigBuilder) -> Result<(), Vec<String>> {
     }
 }
 
-pub async fn check_buffer_preconditions(config: &Config) -> Result<(), Vec<String>> {
+//pub async fn check_buffer_preconditions(config: &Config) -> Result<(), Vec<String>> {
 //     // We need to assert that Vector's data directory is located on a mountpoint that has enough
 //     // capacity to allow all sinks with disk buffers configured to be able to use up to their
 //     // maximum configured size without overrunning the total capacity.
@@ -281,7 +281,7 @@ pub async fn check_buffer_preconditions(config: &Config) -> Result<(), Vec<Strin
 //     //
 //     // We specifically do not do any sort of warning on free space because that has to be the
 //     // responsibility of the operator to ensure there's enough total space for all buffers present.
-//     let mut errors = Vec::new();
+    // let mut errors = Vec::new();
 
 //     for (mountpoint, buffers) in mountpoint_buffer_mapping {
 //         let buffer_max_size_total: u64 = buffers.iter().map(|usage| usage.max_size()).sum();
@@ -303,13 +303,13 @@ pub async fn check_buffer_preconditions(config: &Config) -> Result<(), Vec<Strin
 //         }
 //     }
 
-//     if errors.is_empty() {
-//         Ok(())
-//     } else {
-//         Err(errors)
-//     }
-    ok(())
-}
+    // if errors.is_empty() {
+    //     Ok(())
+    // } else {
+    //     Err(errors)
+    // }
+        
+//}
 
 // async fn process_partitions(partitions: Vec<Partition>) -> heim::Result<IndexMap<PathBuf, u64>> {
 //     stream::iter(partitions)
