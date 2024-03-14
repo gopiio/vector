@@ -425,7 +425,7 @@ target-x86_64-unknown-linux-musl = ["api", "api-client", "rdkafka?/cmake_build",
 target-powerpc64le-unknown-linux-gnu = ["api", "api-client", "enrichment-tables", "rdkafka?/cmake_build", "sinks", "sources", "sources-dnstap", "transforms", "unix"]
 # Currently doesn't build due to lack of support for 64-bit atomics
 target-powerpc-unknown-linux-gnu = ["api", "api-client", "enrichment-tables", "rdkafka?/cmake_build", "sinks", "sources", "sources-dnstap", "transforms", "unix"]
-target-x86_64-unknown-freebsd = ["sinks", "sources","transforms", "unix"]
+target-x86_64-unknown-freebsd = ["api", "api-client", "enrichment-tables", "rdkafka?/cmake_build", "sinks", "sources","transforms", "unix", "sources-dnstap"]
 # Enables features that work only on systems providing `cfg(unix)`
 unix = ["tikv-jemallocator", "allocation-tracing"]
 allocation-tracing = []
